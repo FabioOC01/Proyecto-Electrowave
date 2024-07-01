@@ -1,0 +1,51 @@
+@extends('layouts.app')
+
+@section('title', 'Editar Usuario')
+
+@section('content')
+<style>
+    body {
+      background-color: #000; 
+      color: #fff; 
+    }
+    .table {
+      background-color: #1a1a1a; 
+      color: #fff; 
+      border: none;
+      border-radius: 10px;
+    }
+    </style>
+<div class="container">
+    <h1 class="display-4">Edit User</h1>
+    <br>
+
+    <form method="POST" action="{{ route('users.update', $user->id) }}">
+        @csrf
+        @method('PUT')
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" class="form-control" value="{{ $user->name }}" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-control" value="{{ $user->email }}" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="text" id="phone" name="phone" class="form-control" value="{{ $user->phone }}">
+        </div>
+
+        <div class="mb-3">
+            <label for="role" class="form-label">Role</label>
+            <select id="role" name="role" class="form-select" required>
+                <option value="user" {{ $user->role === 'user' ? 'selected' : '' }}>User</option>
+                <option value="admin" {{ $user->role === 'admin' ? 'selected' : '' }}>Admin</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>
+@endsection
