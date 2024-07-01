@@ -46,7 +46,7 @@ class LoginController extends Controller
         if ($user->role == 'admin') {
             return redirect('/service_requests'); // Redirige al admin a la página de Service Requests
         } else if ($user->role == 'user') {
-            return redirect('/service_requests/create'); // Redirige al user a la página de creación de solicitudes
+            return redirect('/service_requests'); // Redirige al user a la página de creación de solicitudes
         }
 
         return redirect($this->redirectPath());

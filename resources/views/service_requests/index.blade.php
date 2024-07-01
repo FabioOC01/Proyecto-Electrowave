@@ -37,9 +37,9 @@
 <div class="container">
     <h1 class="display-4">Seguimiento de Pedidos</h1>
 
-    @if(Auth::user()->role === 'admin')
+    
     <a href="{{ route('service_requests.create') }}" class="btn btn-primary mb-3">Nuevo Pedido</a>
-    @endif
+   
     
     <table class="table table-bordered">
         <thead>

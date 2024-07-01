@@ -1,8 +1,13 @@
-@extends('layouts.app')
-
-@section('title', 'Editar')
-
-@section('content')
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar - ElectroWave</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	
+    <link rel="stylesheet" href="css/inicio.css">
+</head>
 <style>
     body {
       background-color: #000; 
@@ -119,4 +124,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 </script>
-@endsection

@@ -1,8 +1,13 @@
-@extends('layouts.app')
-
-@section('title', 'Crear Pedido')
-
-@section('content')
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Pedido - ElectroWave</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	
+    <link rel="stylesheet" href="css/inicio.css">
+</head>
 <style>
     body {
       background-color: #000; 
@@ -55,7 +60,7 @@
             <label for="service_type">Tipo de Servicio</label>
             <select class="form-control" name="service_type" id="service_type" required>
                 <option value="">Seleccionar Servicio</option>
-                <!-- Options will be populated by JavaScript -->
+                
             </select>
         </div>
         <div class="form-group">
@@ -88,8 +93,10 @@ document.addEventListener('DOMContentLoaded', function () {
             options = [
                 { value: 'Instalación de Componente', text: 'Instalación de Componente' },
                 { value: 'Diagnostico Completo', text: 'Diagnostico Completo' },
-                { value: 'Limpieza', text: 'Limpieza' },
+                { value: 'Instalación de Software', text: 'Instalación de Software' },
+                { value: 'Limpieza', text: 'Limpieza y Mantenimiento' },
             ];
+
         } else if (device === 'Celular') {
             options = [
                 { value: 'Cambio de Bateria', text: 'Cambio de Bateria' },
@@ -107,4 +114,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 </script>
-@endsection
+

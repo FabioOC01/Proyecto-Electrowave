@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ElectroWave</title>
+    <title>Celulares - ElectroWave</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 	
     <link rel="stylesheet" href="css/inicio.css">
@@ -76,8 +76,57 @@
         </ul>
     </nav>
 </header>
-<div class="container">
-    <h1>Celulares</h1>
-    <p>Contenido sobre celulares.</p>
-</div>
+
+<body>
+   
+    <header class="jumbotron text-center">
+        <h5 class="display-4">Reparación de Celulares</h5>
+        <p class="lead">Para cualquier modelo de telefono</p>
+        <a class="btn btn-primary btn-lg" href="{{ route('login') }}" role="button">¡Cotiza Ahora!</a>
+    </header>
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                <img class="card-img-top" src="./img/pantalla.jpg" alt="Reparación de Hardware">
+                    <div class="card-body">
+                        <h5 class="card-title">Cambio de Pantalla</h5>
+                        <p class="card-text">Reemplazo de pantalla rota por una original.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                <img class="card-img-top" src="./img/hardware.jpg" alt="Reparación de Celulares">
+                    <div class="card-body">
+                        <h5 class="card-title">Reparación de Hardware</h5>
+                        <p class="card-text">Diagnóstico y reparación de componentes físicos de tu celular.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-2">
+                <img class="card-img-top" src="./img/bateriaa.jpg" alt="Instalación de Software">
+                    <div class="card-body">
+                        <h5 class="card-title">Cambio de Bateria</h5>
+                        <p class="card-text">Instalacion de baterias con el 100% de capacidad maxima.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 ElectroWave. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
 

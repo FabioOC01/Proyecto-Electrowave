@@ -29,7 +29,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/service_requests/create';
+    protected $redirectTo = '/service_requests';
 
     /**
      * Create a new controller instance.
@@ -74,6 +74,6 @@ class RegisterController extends Controller
     }
     protected function registered($request, $user)
     {
-        return redirect()->route('service_requests.create'); // Redirige al formulario de creación de solicitudes de servicio
+        return redirect()->route('service_requests.index'); // Redirige al formulario de creación de solicitudes de servicio
     }
 }

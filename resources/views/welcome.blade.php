@@ -99,26 +99,27 @@
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="./img/reparacion cel.jpg" alt="Reparación de Celulares">
+                    <img class="card-img-top" src="./img/domicilio.jpg" alt="Mantenimiento Preventivo">
                     <div class="card-body">
-                        <h5 class="card-title">Reparación de Celulares</h5>
-                        <p class="card-text">Reparación de pantallas, baterías, problemas de software y más.</p>
+                        <h5 class="card-title">Servicio a Domicilio</h5>
+                        <p class="card-text"><br> 
+                           ¡Repara tu dispositivo sin salir de casa! <br>
+                           Nuestro Experto irá a ayudarte. <br>
+                           Paga al terminar el servicio.
+                        </p>
                     </div>
                 </div>
+                <br>
+                <br>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="./img/mantenimiento.jpg" alt="Mantenimiento Preventivo">
+                    <img class="card-img-top" src="./img/reparacion cel.jpg" alt="Reparación de Celulares">
                     <div class="card-body">
-                        <h5 class="card-title">Mantenimiento Preventivo</h5>
-                        <p class="card-text"><br> 
-                            Servicios de mantenimiento regular para asegurar el buen funcionamiento de tus dispositivos.
-                            
-                            <br>
-                            
-
-                        </p>
+                        <h5 class="card-title">Reparación de Celulares</h5>
+                        <p class="card-text">Cambio de pantallas, baterías, problemas de software y más. </p>
                     </div>
+                    <br>
                 </div>
             </div>
         </div>
@@ -126,7 +127,7 @@
 
    
 
-    <footer class="text-center bg-dark text-white py-3">
+    <footer class="bg-light text-center py-4">
         <p>&copy; 2024 ElectroWave. Todos los derechos reservados.</p>
     </footer>
 

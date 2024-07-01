@@ -24,7 +24,7 @@ Route::middleware('role:admin')->group(function () {
     Route::resource('service_requests', ServiceRequestController::class);
 });
 Route::middleware('role:user')->group(function () {
-    Route::get('service_requests/create', [ServiceRequestController::class, 'create'])->name('service_requests.create');
+    Route::get('service_requests/create', [ServiceRequestController::class, 'create'])->name('service_requests');
     Route::post('service_requests', [ServiceRequestController::class, 'store'])->name('service_requests.store');
 });
 Route::middleware('auth')->group(function () {
